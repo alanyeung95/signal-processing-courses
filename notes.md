@@ -6,7 +6,8 @@
 # section-2
 ## time series filter
 if k (windows size) is very large, edge effect will be large also as data between 0 to k will be 0
-
+### mean-smoothing 
+ 
 ### gaussian-smoothing
 - more smoother then mean-smooth  
 - data near windows center has more weighting
@@ -22,3 +23,6 @@ if k (windows size) is very large, edge effect will be large also as data betwee
 
 ## data processing
 ### linear detrending
+
+### nonlinear trend with polynomials (modle fitting)
+- use `Bayes information criterion` to find optimal order

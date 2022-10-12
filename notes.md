@@ -40,8 +40,10 @@ if k (windows size) is very large, edge effect will be large also as data betwee
 # section-3
 
 ## time domain vs frequency domain
+<img src="diagrams/diagram-1.png" alt="drawing" width="400"/>
 
-![alt](diagrams/diagram-1.png)
+## sampling rate
+the number of samples per second (or per other unit) taken from a continuous signal to make a discrete or digital signal.
 
 ## fourir transform
 

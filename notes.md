@@ -56,3 +56,8 @@ the number of samples per second (or per other unit) taken from a continuous sig
 
 - frequency domain computations are often easier and faster than time domain
 - use the convolution theorem to perform other operation in the frequency domain like filtering, autocorrection, etc.
+
+### Welch's method
+- divide time into different block (e.g. n time block)
+- compute the frequency and power for each time block
+- later can use the data to draw a spectrogram (with n time block)

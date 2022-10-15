@@ -69,7 +69,18 @@ In mathematics, the complex conjugate of a complex number is the number with an 
 
 # sectoin-5: filtering
 
-## frequency domain filtering
-1. data in time domain convert to frequency domain
-2. high pass(perserve high frequency only) or low pass filtering
-3. convert the data back to time domain
+## filter time series data
+1. data in time domain convert to frequency domain and cut-offs (high pass(perserve high frequency only) or low pass filtering)
+2. generate filter kernel (firls, fir1, butter or other)
+3. evaluate kernel and its power spectrum
+4. apply filter kernel to data
+
+## FIR vs IIR
+|   | FIR  |  IIR |
+|---|---|---|
+| Name  | Finite impulse response  | Infinite impulse response  |
+| Kernel length  | Long  | Short  |
+| Speed  | Slower  | Fast (better for online/real time filtering because of short kernel length)  |
+| Stability  | High  | Data-dependent  |
+| Mechanism  | Multiply data with kernel  | Multiply data with data (if previous data is wired, future data may be affected)  |
+

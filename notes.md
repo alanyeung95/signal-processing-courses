@@ -5,7 +5,7 @@
 - Amplitude: distance between the resting position and the maximum displacement of the wave.
 - Frequency: number of waves passing by a specific point per second.
 
-# section-2
+# section-2: time series denoising
 
 ## time series filter
 
@@ -37,7 +37,7 @@ if k (windows size) is very large, edge effect will be large also as data betwee
 
 - use `Bayes information criterion` to find optimal order
 
-# section-3
+# section-3 spectral and rhythmicity analyses
 
 ## time domain vs frequency domain
 <img src="diagrams/diagram-1.png" alt="drawing" width="400"/>
@@ -61,3 +61,15 @@ the number of samples per second (or per other unit) taken from a continuous sig
 - divide time into different block (e.g. n time block)
 - compute the frequency and power for each time block
 - later can use the data to draw a spectrogram (with n time block)
+
+# section-4: complex numbers
+
+## Complex conjugate
+In mathematics, the complex conjugate of a complex number is the number with an equal real part and an imaginary part equal in magnitude but opposite in sign. That is, the complex conjugate of `a+bi` is equal to `a-bi`
+
+# sectoin-5: filtering
+
+## frequency domain filtering
+1. data in time domain convert to frequency domain
+2. high pass(perserve high frequency only) or low pass filtering
+3. convert the data back to time domain

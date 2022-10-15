@@ -84,3 +84,6 @@ In mathematics, the complex conjugate of a complex number is the number with an 
 | Stability  | High  | Data-dependent  |
 | Mechanism  | Multiply data with kernel  | Multiply data with data (if previous data is wired, future data may be affected)  |
 
+## FIR
+### order
+The order of the filter is the number of time points in the filter. So an order-13 mean-smoothing filter has 13 points, which means that each point t in the filtered signal is the average of points t-6 to t+6. For example, variable k to be how far back/forwards to go, thus if k=6 then the order is 13.

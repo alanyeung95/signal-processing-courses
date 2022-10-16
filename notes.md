@@ -42,8 +42,10 @@ if k (windows size) is very large, edge effect will be large also as data betwee
 ## time domain vs frequency domain
 <img src="diagrams/diagram-1.png" alt="drawing" width="400"/>
 
-## sampling rate
-the number of samples per second (or per other unit) taken from a continuous signal to make a discrete or digital signal.
+## terms
+- sampling rate: the number of samples per second (or per other unit) taken from a continuous signal to make a discrete or digital signal.
+
+- Nyquist frequency: In units of cycles per second (Hz), its value is one-half of the sampling rate (samples per second)
 
 ## fourir transform
 

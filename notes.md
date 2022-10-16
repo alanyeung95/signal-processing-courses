@@ -89,3 +89,15 @@ In mathematics, the complex conjugate of a complex number is the number with an 
 ## FIR
 ### order
 The order of the filter is the number of time points in the filter. So an order-13 mean-smoothing filter has 13 points, which means that each point t in the filtered signal is the average of points t-6 to t+6. For example, variable k to be how far back/forwards to go, thus if k=6 then the order is 13.
+
+## IIR
+use 2 kernel filters. 
+1. weigths for the previous values of the original signal, 
+2. previous values of the already filtered signal
+
+
+### Zero-phase filtering
+Zero-phase filtering is a non-causal procedure, so it cannot be done in real time, only offline (or pseudo real-time, i.e., with a sufficient delay). A zero-phase filter needs to have a purely real-valued frequency response
+
+## remove edge effect
+clone the orignal signal, then add it to the start and the end of the original signal

@@ -77,6 +77,12 @@ In mathematics, the complex conjugate of a complex number is the number with an 
 3. evaluate kernel and its power spectrum
 4. apply filter kernel to data
 
+## taper function
+1. Hann vs Hamming vs Gauss
+
+- Hann and Hamming are similiar, but Hann will touch `0`. So Hamming may still have edge effect.
+- Gauss windows are narrower and will go quickier to `0`
+
 ## FIR vs IIR
 |   | FIR  |  IIR |
 |---|---|---|
@@ -101,3 +107,11 @@ Zero-phase filtering is a non-causal procedure, so it cannot be done in real tim
 
 ## remove edge effect
 clone the orignal signal, then add it to the start and the end of the original signal
+
+## low-pass filtering
+### FIR and IIR
+1. define frequency cut-off and transition windows
+
+### windowed sinc function
+- supress faster after target frequencies
+- has round shape later and flat line at the end

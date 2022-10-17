@@ -115,3 +115,9 @@ clone the orignal signal, then add it to the start and the end of the original s
 ### windowed sinc function
 - supress faster after target frequencies
 - has round shape later and flat line at the end
+
+## narrow-band filter
+- make sure the lower band and upper band have same size of transition windows
+
+## two-stage wide-band filter
+- filter as two step if one time filter cannot create a good filter

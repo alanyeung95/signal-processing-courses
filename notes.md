@@ -121,3 +121,20 @@ clone the orignal signal, then add it to the start and the end of the original s
 
 ## two-stage wide-band filter
 - filter as two step if one time filter cannot create a good filter
+
+# section-6: Convolution 
+
+A way to combine two time series (or images...)
+
+- Signal: the "interesting" time series
+- Kernel: The filter
+- Convolution result: A mixture of the features of the signal and the kernel
+
+computation convolution in frequency domain is easier than in time domain
+
+## convolution result = dot product of data and kernel
+
+suppose kernel lenght = 3
+convolution [i] = data[i-1:i+2] dot kernel[i-1:i+2]
+
+length of convolution result = length of data + length of kernel - 1

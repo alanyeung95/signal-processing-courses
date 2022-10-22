@@ -132,9 +132,18 @@ A way to combine two time series (or images...)
 
 computation convolution in frequency domain is easier than in time domain
 
+## convolution theorem
+[<img src="https://dartbrains.org/_images/ConvolutionTheorem.png">](https://dartbrains.org/_images/ConvolutionTheorem.png)
+
+- signal -> convolution (in time domain) -> frequency in fft == signal -> fft -> multiply signal and kernel (frequency domain)
+- signal -> fft -> multiply signal and kernel (frequency domain) -> ifft (time domain) ==  signal -> convolution (in time domain)
+
 ## convolution result = dot product of data and kernel
 
 suppose kernel lenght = 3
 convolution [i] = data[i-1:i+2] dot kernel[i-1:i+2]
 
 length of convolution result = length of data + length of kernel - 1
+
+## using morlet wavelet as convolution filter
+<img src="diagrams/diagram-2.png" alt="drawing" width="700"/>

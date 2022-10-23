@@ -147,3 +147,17 @@ length of convolution result = length of data + length of kernel - 1
 
 ## using morlet wavelet as convolution filter
 <img src="diagrams/diagram-2.png" alt="drawing" width="700"/>
+
+# section-7: Wavelet-analysis
+
+Wavelets are functions that you can use to decompose signals.
+
+## species of wavletes
+1. Morlet wavelet
+2. Haar wavelet (could be used as edge detector in time domain, not useful in frequency domain/ specturm analysis)
+3. Mexican wavelet
+4. Difference of Gaussian (DoG) wavelet
+
+## application of wavelets
+1. filtering (fime-frequency analysis)
+2. feature detection (pattern-matching)

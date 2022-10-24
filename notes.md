@@ -154,7 +154,9 @@ Wavelets are functions that you can use to decompose signals.
 
 ## species of wavletes
 1. Morlet wavelet
+    1. need to normalize the filter signal manually as filtered signal. As the amplitude is hundreds time larger than the oringal one
 2. Haar wavelet (could be used as edge detector in time domain, not useful in frequency domain/ specturm analysis)
+    1. non negative value are on the right hand side of the Haar function, that's why the peak of Haar convolution will be on the right of Mexican function
 3. Mexican wavelet
 4. Difference of Gaussian (DoG) wavelet
 

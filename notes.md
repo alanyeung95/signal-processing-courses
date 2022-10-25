@@ -148,6 +148,12 @@ length of convolution result = length of data + length of kernel - 1
 ## using morlet wavelet as convolution filter
 <img src="diagrams/diagram-2.png" alt="drawing" width="700"/>
 
+## Planck-taper
+[<img src="https://www.recordingblogs.com/rbdocs/wiki/plancktaperwindow-window.png">](https://www.recordingblogs.com/rbdocs/wiki/plancktaperwindow-window.png)
+
+- different from Gaussian function, which has one peak point but Planck-taper can be defined with many peak point.
+- 0<ϵ≤0.5 (determine steepness of increase and decress)
+
 # section-7: Wavelet-analysis
 
 Wavelets are functions that you can use to decompose signals.

@@ -169,3 +169,14 @@ Wavelets are functions that you can use to decompose signals.
 ## application of wavelets
 1. filtering (fime-frequency analysis)
 2. feature detection (pattern-matching)
+
+## complex wavelet
+consist with real part and imaginary part
+
+[<img src="http://crydee.sai.msu.ru/~vab/Wavelet.rsc/Tutor.dir/morlet.gif">](http://crydee.sai.msu.ru/~vab/Wavelet.rsc/Tutor.dir/morlet.gif)
+
+### complex plane
+[<img src="https://qph.cf2.quoracdn.net/main-qimg-7795d2cc61760acdcded37a2bc96867c-lq">](https://qph.cf2.quoracdn.net/main-qimg-7795d2cc61760acdcded37a2bc96867c-lq)
+
+- in a imag & real plane, distance from the origin is the `magnitude`
+- `phase angle` = θ

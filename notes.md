@@ -180,3 +180,19 @@ consist with real part and imaginary part
 
 - in a imag & real plane, distance from the origin is the `magnitude`
 - `phase angle` = θ
+- Real-valued wavelets are used for filtering, complex-valued wavelets are additionally used for time-frequency analysis (e.g., power and phase).
+
+## section-8: Resampling
+### interpolation/resampling/upsampling: insert extra points/data
+
+### downsampling 
+steps:
+
+1. pick new sampling rate
+2. low-pass filter at new Nyquist
+3. downsample
+
+### how to resample in matlab?
+for example from 100 to 80 factor
+
+first upsample to 400 by 4 then downsample to 80 by factor of 5

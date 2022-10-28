@@ -211,3 +211,7 @@ steps:
 2. convert 2 windows from time domain to frequency domain
 3. create the third frequency by averaging 2 spectral
 4. using linear trend to connnect 2 points smoothly (detrend mock data, and add the slope from 2 window points)
+
+## Dynamic time warping
+
+dynamic time warping (DTW) is an algorithm for measuring similarity between two temporal sequences

@@ -182,17 +182,32 @@ consist with real part and imaginary part
 - `phase angle` = θ
 - Real-valued wavelets are used for filtering, complex-valued wavelets are additionally used for time-frequency analysis (e.g., power and phase).
 
-## section-8: Resampling
-### interpolation/resampling/upsampling: insert extra points/data
+# section-8: Resampling
+## interpolation/resampling/upsampling: insert extra points/data
 
-### downsampling 
+## downsampling 
 steps:
 
 1. pick new sampling rate
 2. low-pass filter at new Nyquist
 3. downsample
 
-### how to resample in matlab?
+## how to resample in matlab?
 for example from 100 to 80 factor
 
 first upsample to 400 by 4 then downsample to 80 by factor of 5
+
+## interpolation
+linear, next, nearest, spline (better in frequency domain as the number of sharp edges)
+
+## extrapolation
+linear vs spline/cubic (data generated will be more exaggerated when compares with linear appraoch)
+
+## spectral interpolation
+interpolation data in time domain
+
+steps:
+1. it is suggested that the windows size before and after are the same
+2. convert 2 windows from time domain to frequency domain
+3. create the third frequency by averaging 2 spectral
+4. using linear trend to connnect 2 points smoothly (detrend mock data, and add the slope from 2 window points)

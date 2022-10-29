@@ -215,3 +215,14 @@ steps:
 ## Dynamic time warping
 
 dynamic time warping (DTW) is an algorithm for measuring similarity between two temporal sequences
+
+## section-9: Outlier detection
+
+outliner effect: pull the mean up
+
+## deal with outlier
+- remove outliner with standard deviation, then interpolate the missing points
+- detect outliner: global or local (with window size as percent of total signal length) threshold
+
+## window outlier
+use Root mean square, find all local RMS, then pick the threshold manually

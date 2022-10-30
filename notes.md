@@ -230,3 +230,21 @@ use Root mean square, find all local RMS, then pick the threshold manually
 # sectoin-10 Feature detection
 ## find local minima/maxima
 `peeks1 = np.squeeze( np.where(np.diff(np.sign(np.diff(signal1)))<0) )+1`
+
+## recover signal/feature from noise amplitude
+four approach
+- Rectify
+- Hilbert
+- TKEO
+- Variance
+
+also all approach need parameter `k` (window size) to do smoothing
+
+## Wavelet convolution for feature extraction
+
+identify specific feature on signal, assume you have the template of the event/feature, but don't know when it will happen in the real data
+
+steps: 
+1. calculate convolution between data and the event template
+2. identify pattern and pick threshold
+3. pick events

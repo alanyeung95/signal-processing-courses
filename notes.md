@@ -226,3 +226,7 @@ outliner effect: pull the mean up
 
 ## window outlier
 use Root mean square, find all local RMS, then pick the threshold manually
+
+# sectoin-10 Feature detection
+## find local minima/maxima
+`peeks1 = np.squeeze( np.where(np.diff(np.sign(np.diff(signal1)))<0) )+1`

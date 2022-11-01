@@ -251,3 +251,13 @@ steps:
 
 ## EMG data feature detection
 use TKEO algorithm and threshold to capture first spike of the signal
+
+## full width half maximum
+steps to get full width half maximum:
+
+1. define a gaussian function with sampling rate
+2. find peak point
+3. then find 50% th of the point from start to peak
+4. then find 50% th of the point from peak to end
+
+better to smooth the curve before finding the full width half maximum

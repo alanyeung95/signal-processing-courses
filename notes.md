@@ -248,3 +248,6 @@ steps:
 1. calculate convolution between data and the event template
 2. identify pattern and pick threshold
 3. pick events
+
+## EMG data feature detection
+use TKEO algorithm and threshold to capture first spike of the signal

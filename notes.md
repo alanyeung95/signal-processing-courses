@@ -261,3 +261,14 @@ steps to get full width half maximum:
 4. then find 50% th of the point from peak to end
 
 better to smooth the curve before finding the full width half maximum
+
+### empirical value
+
+The empirical rule is a quick way to get an overview of your data and check for any outliers or extreme values that don’t follow this pattern.
+
+The empirical rule, or the 68-95-99.7 rule, tells you where most of the values lie in a normal distribution:
+```
+Around 68% of values are within 1 standard deviation of the mean.
+Around 95% of values are within 2 standard deviations of the mean.
+Around 99.7% of values are within 3 standard deviations of the mean.
+```

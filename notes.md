@@ -272,3 +272,16 @@ Around 68% of values are within 1 standard deviation of the mean.
 Around 95% of values are within 2 standard deviations of the mean.
 Around 99.7% of values are within 3 standard deviations of the mean.
 ```
+
+## area under the curve
+https://byjus.com/area-under-the-curve-formula/#:~:text=The%20area%20under%20a%20curve,using%20integration%20with%20given%20limits.
+
+# section-11 Variability
+
+## two approach to increase SNR
+1. boost signal
+2. reduce noise
+
+
+## Coefficient of variation
+formula: std/mean 

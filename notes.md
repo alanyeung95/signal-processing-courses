@@ -1,5 +1,5 @@
 # section-1
-
+	
 ## Amplitude and Frequency
 
 - Amplitude: distance between the resting position and the maximum displacement of the wave.
@@ -7,7 +7,7 @@
 
 # section-2: time series denoising
 
-## time series filter
+## time series filter :star:
 
 if k (windows size) is very large, edge effect will be large also as data between 0 to k will be 0
 
@@ -15,18 +15,25 @@ if k (windows size) is very large, edge effect will be large also as data betwee
 
 ### gaussian-smoothing
 
+<img src="diagrams/diagram-3.png" alt="drawing" width="400"/>
+<img src="diagrams/diagram-4.png" alt="drawing" width="400"/>
+
 - more smoother then mean-smooth
 - data near windows center has more weighting
 - k should be minimial as possible (to avoid edge effect) while the first item of gaussian window should be closed to 0
+
+### mean-smoothing vs gaussian-smoothing
+<img src="diagrams/diagram-5.png" alt="drawing" width="400"/>
 
 ### electromyogram
 
 - denoising via TKEO
 - convert original signal and TKEO signal as `z score`
+- z-score: standard score is the number of standard deviations a given data point lies above or below the mean. To calculate the Z-score, subtract the mean from each of the individual data points and divide the result by the standard deviation. Results of zero show the point and the mean equal. A result of one indicates the point is one standard deviation above the mean and when data points are below the mean, the Z-score is negative. In most large data sets, 99% of values have a Z-score between -3 and 3, meaning they lie within three standard deviations above or below the mean.
 
-### median filter
+### median filter :star: 
 
-- use hist to pick threshold
+- use histrogram to pick threshold
 - compare with mean filter it preserve the detail of datas (e.g. the edge on the graph)
 
 ## data processing
@@ -37,9 +44,9 @@ if k (windows size) is very large, edge effect will be large also as data betwee
 
 - use `Bayes information criterion` to find optimal order
 
-# section-3 spectral and rhythmicity analyses
+# section-3 spectral and rhythmicity analyses :star: 
 
-## time domain vs frequency domain
+## time domain vs frequency domain 
 <img src="diagrams/diagram-1.png" alt="drawing" width="400"/>
 
 ## terms
@@ -69,13 +76,24 @@ if k (windows size) is very large, edge effect will be large also as data betwee
 ## Complex conjugate
 In mathematics, the complex conjugate of a complex number is the number with an equal real part and an imaginary part equal in magnitude but opposite in sign. That is, the complex conjugate of `a+bi` is equal to `a-bi`
 
-# sectoin-5: filtering
+# sectoin-5: filtering :star: 
 
-## filter time series data
+## fitering in frequency domain :star: 
 1. data in time domain convert to frequency domain and cut-offs (high pass(perserve high frequency only) or low pass filtering)
+2. convert signal from frequency to time domain using `inverse fourier transform`.
+<img src="diagrams/diagram-7.png" alt="drawing" width="600"/>
+
+## filter time domaiain :star: 
+1. signal with noises
+2. for each value in time point, apply filter kernel on signal
+<img src="diagrams/diagram-8.png" alt="drawing" width="600"/>
+
+## filter time series steps :star: 
+1. define frqeuency-domain shape and cut-offs
 2. generate filter kernel (firls, fir1, butter or other)
 3. evaluate kernel and its power spectrum
 4. apply filter kernel to data
+<img src="diagrams/diagram-9.png" alt="drawing" width="600"/>
 
 ## taper function
 1. Hann vs Hamming vs Gauss
@@ -83,7 +101,10 @@ In mathematics, the complex conjugate of a complex number is the number with an 
 - Hann and Hamming are similiar, but Hann will touch `0`. So Hamming may still have edge effect.
 - Gauss windows are narrower and will go quickier to `0`
 
-## FIR vs IIR
+<img src="diagrams/diagram-6.png" alt="drawing" width="700"/>
+
+
+## FIR vs IIR :star: 
 |   | FIR  |  IIR |
 |---|---|---|
 | Name  | Finite impulse response  | Infinite impulse response  |

@@ -164,20 +164,32 @@ clone the orignal signal, then add it to the start and the end of the original s
 
 # section-6: Convolution
 
+Definition:
+Convolution is a mathematical way of combining two signals to form a third signal. Using the strategy of impulse decomposition, systems are described by a signal called the impulse response. Convolution is important because it relates the three signals of interest: the input signal, the output signal, and the impulse response.
+
 A way to combine two time series (or images...)
 
 - Signal: the "interesting" time series
 - Kernel: The filter
 - Convolution result: A mixture of the features of the signal and the kernel
 
-computation convolution in frequency domain is easier than in time domain
+## importance
+
+- can be used for better denoising/filtering (e.g. narrowband filtering), it is because it doesn't have edge effects show in time domain
+- provide new way of looking at signal (2 signals become a new signal)
+- computation convolution in frequency domain is easier than in time domain
 
 ## convolution theorem
 
 [<img src="https://dartbrains.org/_images/ConvolutionTheorem.png">](https://dartbrains.org/_images/ConvolutionTheorem.png)
 
-- signal -> convolution (in time domain) -> frequency in fft == signal -> fft -> multiply signal and kernel (frequency domain)
-- signal -> fft -> multiply signal and kernel (frequency domain) -> ifft (time domain) == signal -> convolution (in time domain)
+- convolution: signal & kernal in time domain -> the result of convolution -> fft -> signal in frequence domain
+- signal -> fast fourier transform -> fourier spectrum -> multiply each frequency of signal and corresponding kernel -> signal in frequency domain -> ifft -> the result of convolution
+
+### why fast fourier fransform approach is recommanded
+
+- fast fourier transform is really fast compare with time domain convolution if the time series is long
+- fast fourier transform require fewer lines of code
 
 ## convolution result = dot product of data and kernel
 
@@ -201,7 +213,13 @@ length of convolution result = length of data + length of kernel - 1
 
 Wavelets are functions that you can use to decompose signals.
 
-## species of wavletes
+## application of wavelets
+
+1. filtering (fime-frequency analysis)
+2. feature detection (pattern-matching).
+   1. e.g., go through a time series and use a wavelet as a template to search for a particular feature embedded in the signal
+
+## species of waveletes
 
 1. Morlet wavelet
    1. need to normalize the filter signal manually as filtered signal. As the amplitude is hundreds time larger than the oringal one
@@ -210,16 +228,11 @@ Wavelets are functions that you can use to decompose signals.
 3. Mexican wavelet
 4. Difference of Gaussian (DoG) wavelet
 
-## application of wavelets
-
-1. filtering (fime-frequency analysis)
-2. feature detection (pattern-matching)
+- different wavelet have different applications in signal processing. e.g., morlet wavelet are useful for time frequency analysis because there are nicely localized in the frequency domain
 
 ## complex wavelet
 
 consist with real part and imaginary part
-
-[<img src="http://crydee.sai.msu.ru/~vab/Wavelet.rsc/Tutor.dir/morlet.gif">](http://crydee.sai.msu.ru/~vab/Wavelet.rsc/Tutor.dir/morlet.gif)
 
 ### complex plane
 

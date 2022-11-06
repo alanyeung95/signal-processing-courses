@@ -219,6 +219,9 @@ Wavelets are functions that you can use to decompose signals.
 2. feature detection (pattern-matching).
    1. e.g., go through a time series and use a wavelet as a template to search for a particular feature embedded in the signal
 
+feature delection of wavelet in time domain analysis
+<img src="diagrams/diagram-10.png" alt="drawing" width="700"/>
+
 ## species of waveletes
 
 1. Morlet wavelet
@@ -268,7 +271,7 @@ linear, next, nearest, spline (better in frequency domain as the number of sharp
 
 linear vs spline/cubic (data generated will be more exaggerated when compares with linear appraoch)
 
-## spectral interpolation
+## spectral interpolation (what to do when a large chunk of time signal is missing?)
 
 interpolation data in time domain
 
@@ -329,7 +332,11 @@ use TKEO algorithm and threshold to capture first spike of the signal
 
 ## full width half maximum
 
-steps to get full width half maximum:
+The full width at half maximum (FWHM) is a parameter commonly used to describe the width of a "bump" on a curve or function. It is given by the distance between points on the curve at which the function reaches half its maximum value.
+
+it is used to measure the shape of the dataset
+
+### steps to get full width half maximum:
 
 1. define a gaussian function with sampling rate
 2. find peak point
@@ -355,6 +362,11 @@ Around 99.7% of values are within 3 standard deviations of the mean.
 https://byjus.com/area-under-the-curve-formula/#:~:text=The%20area%20under%20a%20curve,using%20integration%20with%20given%20limits.
 
 # section-11 Variability
+
+## two approach to measure variability of data
+
+1. Root Mean Square
+2. Variance (substract the mean)
 
 ## two approach to increase SNR
 

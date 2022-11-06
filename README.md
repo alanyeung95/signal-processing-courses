@@ -181,13 +181,13 @@ A way to combine two time series (or images...)
 - Kernel: The filter
 - Convolution result: A mixture of the features of the signal and the kernel
 
-## importance
+## importance :star:
 
 - can be used for better denoising/filtering (e.g. narrowband filtering), it is because it doesn't have edge effects show in time domain
 - provide new way of looking at signal (2 signals become a new signal)
 - computation convolution in frequency domain is easier than in time domain
 
-## convolution theorem
+## convolution theorem :star:
 
 [<img src="https://dartbrains.org/_images/ConvolutionTheorem.png">](https://dartbrains.org/_images/ConvolutionTheorem.png)
 
@@ -221,7 +221,7 @@ length of convolution result = length of data + length of kernel - 1
 
 Wavelets are functions that you can use to decompose signals.
 
-## application of wavelets
+## application of wavelets :star:
 
 1. filtering (fime-frequency analysis)
 2. feature detection (pattern-matching).
@@ -271,7 +271,7 @@ for example from 100 to 80 factor
 
 first upsample to 400 by 4 then downsample to 80 by factor of 5
 
-## interpolation
+## interpolation :star:
 
 linear, next, nearest, spline (better in frequency domain as the number of sharp edges)
 
@@ -279,7 +279,7 @@ linear, next, nearest, spline (better in frequency domain as the number of sharp
 
 linear vs spline/cubic (data generated will be more exaggerated when compares with linear appraoch)
 
-## spectral interpolation (what to do when a large chunk of time signal is missing?)
+## spectral interpolation (what to do when a large chunk of time signal is missing?) :star:
 
 interpolation data in time domain
 
@@ -376,7 +376,11 @@ https://byjus.com/area-under-the-curve-formula/#:~:text=The%20area%20under%20a%2
 1. Root Mean Square
 2. Variance (substract the mean)
 
-## two approach to increase SNR
+### SNR (signal to noise ratio) :star:
+
+SNR compares the level of a desired signal to the level of background noise. SNR is defined as the ratio of signal power to the noise power, often expressed in decibels.
+
+### two approach to increase SNR
 
 1. boost signal
 2. reduce noise

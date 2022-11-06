@@ -1,3 +1,11 @@
+Here is my cert:
+
+<img src="cert.jpeg" alt="drawing" width="1000"/>
+
+<br>
+
+But more importantly, below are my notes on this course:
+
 # section-1
 
 ## Amplitude and Frequency
